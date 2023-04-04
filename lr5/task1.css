@@ -1,0 +1,36 @@
+td, .element {
+    box-sizing: border-box;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    background-color: rgb(205, 230, 244);
+}
+
+tr:first-child td, 
+tr td:first-child, 
+.container .element:first-child,
+.first .element {
+    background-color: rgb(148, 204, 232);
+    color: white;
+}
+
+tr:first-child, 
+.container .element:first-child {
+    font-weight: bold;
+}
+
+tr td:first-child, 
+.first .element {
+    text-align: start;
+    width: 160px;
+    padding-left: 20px;
+}
+
+.container {
+    float: left;
+}
+
+.element {
+    margin: 1px;
+    padding: 10px;
+}

@@ -1,0 +1,42 @@
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, div:not(.header-float, .body, .column) {
+    border: 1px solid black;
+    padding-right: 30px;
+    background-color: rgb(230, 255, 211);
+}
+
+.header, .header-float {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(93, 196, 48);
+}
+
+td:nth-child(2n), .column:nth-child(2n) div {
+    background-color: rgb(213, 255, 185);
+}
+
+.column {
+    float: left;
+}
+
+
+
+.header-float {
+    max-width: 551px;
+    border: 1px solid black;
+}
+
+.column:first-child {
+    border-left: 1px solid black;
+}
+
+div:not(.header-float, .body, .column) {
+    border-top: none;
+    border-left: none;
+    padding: 1px 30px 1px 1px;
+}
