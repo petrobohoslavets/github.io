@@ -1,0 +1,37 @@
+div, header, main, footer, section {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.fullwrap {
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 12px;
+}
+
+.header {
+    height: 120px;
+}
+
+.wrap {
+    padding: 12px;
+    margin: 12px 0;
+}
+
+.main, .sidebar {
+    height: 600px;
+    display: inline-block;
+}
+
+.main {
+    width: 640px;
+    margin-right: 40px;
+}
+
+.sidebar {
+    width: 260px;
+}
+
+.footer {
+    height: 120px;
+}

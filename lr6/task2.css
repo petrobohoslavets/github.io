@@ -1,0 +1,31 @@
+.background {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(129, 204, 199);
+}
+
+.clouds {
+    width: 300px;
+    position: absolute;
+    left: 200px;
+}
+
+.water {
+    width: 500px;
+    position: absolute;
+    top: 380px;
+}
+
+.world {
+    width: 500px;
+    position: absolute;
+    top: 110px;
+    left: 8px;
+}
+
+.wooden-ship {
+    width: 100px;
+    position: absolute;
+    top: 290px;
+    left: 20px
+}
