@@ -1167,6 +1167,7 @@ footer .block-text {
     }
 
     .menu-list li a:hover {
+        opacity: 1;
         color: #fff;
     }
 
