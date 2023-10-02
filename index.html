@@ -1,89 +1,120 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Резюме</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="div-hor-menu">
-        <ul class="hor-menu">
-            <li><a href="#" class="menu-item">Головна</a></li>
-            <li><a href="#portfolio" class="menu-item">Портфоліо</a></li>
-            <li><a href="#contact-info" class="menu-item">Контакти</a></li>
-        </ul>
+    <div class="content-wrap">
+        <aside>
+            <nav class="header">
+                <ul class="nav-menu">
+                    <li><a href="#" class="menu-item">Головна</a></li>
+                    <li><a href="#portfolio" class="menu-item">Портфоліо</a></li>
+                    <li><a href="#contact-info" class="menu-item">Контакти</a></li>
+                </ul>
+            </nav>
+            <img src="img/MyPhoto.jpg" alt="MyPhoto" class="aside-img">
+            <div class="aside-content">
+                <div class="contacts">
+                    <div class="aside-title">Contacts</div>
+                    <div class="contacts-content">
+                        <div class="aside-text">С: <span>+38 (098) 200-69-49</span></div>
+                        <div class="aside-text">E: <span>petro.bohoslavets@gmail.com</span></div>
+                    </div>
+                </div>
+                <div class="tech-skills">
+                    <div class="aside-title">Tech Skills</div>
+                    <ul class="aside-list">
+                        <li>HTML, CSS</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C/C++</li>
+                        <li>MS Office</li>
+                    </ul>
+                </div>
+                <div class="soft-skills">
+                    <div class="aside-title">Soft Skills</div>
+                    <ul class="aside-list">
+                        <li>Teamwork</li>
+                        <li>Responsible</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <article>
+            <div class="my-name">Petro Bohoslavets</div>
+            <div class="main-text">My name is Petro. I'm 18 years old. Now I am studying at College of Electronic Devices on Software engineering. I have no work experience, but I am a quick learner and ready to learn any direction in IT.</div>
+            <section class="projects">
+                <div class="title-text">Projects</div>
+                <div class="projects-container" >
+                    <div class="title-text projects-title" id="title1">HTML&CSS</div>
+                    <div class="projects-content hide" id="cont1">
+                        <a href="pr1.html">Практичне завдання до лекції №1</a>
+                        <a href="task6.html">Лабораторна робоота №2 Завдання 6</a>
+                        <a href="task7.html">Лабораторна робоота №2 Завдання 7</a>
+                        <a href="task8.html">Лабораторна робоота №2 Завдання 8</a>
+                        <a href="task 1/index.html">Практичне завдання до лекції "CSS. Intro" Завдання 1</a>
+                        <a href="task 2/cossacs.html">Практичне завдання до лекції "CSS. Intro" Завдання 2</a>
+                        <div class="projects-content-title">Лабораторна робота №4:</div>
+                            <ul>
+                                <li><a href="lr4/task1.html">Завдання №1</a></li>
+                                <li><a href="lr4/task2.html">Завдання №2</a></li>
+                                <li><a href="lr4/task3.html">Завдання №3</a></li>
+                                <li><a href="lr4/task4.html">Завдання №4</a></li>
+                                <li><a href="lr4/task5.html">Завдання №5</a></li>
+                            </ul> 
+                        <div class="projects-content-title">Лабораторна робота №5:</div>
+                            <ul>
+                                <li><a href="lr5/task0.html">Завдання №1</a></li>
+                                <li><a href="lr5/task1.html">Завдання №2</a></li>
+                                <li><a href="lr5/task2.html">Завдання №3</a></li>
+                                <li><a href="lr5/task3.html">Завдання №4</a></li>
+                            </ul>
+                        <div class="projects-content-title">Лабораторна робота №6:</div>
+                            <ul>
+                                <li><a href="lr6/task1.html">Завдання №1</a></li>
+                                <li><a href="lr6/task2.html">Завдання №2</a></li>
+                                <li><a href="lr6/task3.html">Завдання №3</a></li>
+                                <li><a href="lr6/task4.html">Завдання №4</a></li>
+                            </ul> 
+                        <a href="lr7.html" class="portfolio-item">Лабораторна робота №7</a>    
+                        <a href="Exam/index.html" class="portfolio-item">Екзамен</a>    
+                    </div>
+                </div>
+                <div class="projects-container">
+                    <div class="title-text projects-title" id="title2">JavaScript</div>
+                    <div class="projects-content" id="cont2">
+                        <a href="lrJS1/index.html" class="portfolio-item">Лабораторна робота №1 JS</a>
+                    </div>
+                </div>
+            </section>
+            <div class="title-text">Work experience: None</div>
+            <section class="education">
+                <div class="title-text">Education</div>
+                <div class="univ">College of Electronic Devices IFNTUOG</div>
+                <div class="prof">Software engineering</div>
+                <div class="date">September 2020 - up to now <span>|</span> Ukraine</div>
+            </section>
+        </article>
     </div>
-    <div style="margin: 10px; display: flex;">
-        <img src="img/MyPhoto.jpg" alt="MyPhoto" height="150px">
-        <div>
-            <h1>Богославець Петро Ігорович </h1>
-           <h2> Дата народження: 08 липня 2005 року</h2>
-        </div>
-    </div>
-    <h2>Досвід роботи: <i>Відсутній</i></h2>
-    <h1>Освіта:</h1> 
-        <ul>
-            <li>
-                <h3>Коледж Електроних Приладів, 3 курс на спеціальності Програмна Інженерія 2022 - зараз</h3>
-            </li>
-            <li>
-                <h3>Повна загальна середня освіта, Ясенська ЗОШ І-ІІІ ст., 2011-2020 рр.</h3>
-            </li>
-        </ul>
-    <br>
-    <h1>Професійні навички:</h1> 
-        <ol>
-            <li><h3>Хороший рівень володіння компютером;</h3></li>
-            <li><h3>Середній рівень роботи з Microsoft Office Excel та Word;</h3></li>
-            <li><h3>Базовий рівень мов програмування: </h3>
-                <ol>
-                    <li><h4>Python</h4></li>
-                    <li><h4>C++</h4></li>
-                    <li><h4>HTML та CSS</h4></li>
-                </ol>
-        </li>
-        </ol>
-    <hr>
-    <h1 id="portfolio">Мої роботи: </h1>
-        <ul >
-            <li><h3><a href="pr1.html" class="portfolio-item">Практичне завдання до лекції №1</a></h3></li>
-            <li><h3><a href="task6.html" class="portfolio-item">Лабораторна робоота №2 Завдання 6</a></h3></li>
-            <li><h3><a href="task7.html" class="portfolio-item">Лабораторна робоота №2 Завдання 7</a></h3></li>
-            <li><h3><a href="task8.html" class="portfolio-item">Лабораторна робоота №2 Завдання 8</a></h3></li>
-            <li><h3><a href="task 1/index.html" class="portfolio-item">Практичне завдання до лекції "CSS. Intro" Завдання 1</a></h3></li>
-            <li><h3><a href="task 2/cossacs.html" class="portfolio-item">Практичне завдання до лекції "CSS. Intro" Завдання 2</a></h3></li>
-            <li><h3>Лабораторна робота №4: </h3>
-            <ul>
-                <li><h3><a href="lr4/task1.html" class="portfolio-item">Завдання №1</a></h3></li>
-                <li><h3><a href="lr4/task2.html" class="portfolio-item">Завдання №2</a></h3></li>
-                <li><h3><a href="lr4/task3.html" class="portfolio-item">Завдання №3</a></h3></li>
-                <li><h3><a href="lr4/task4.html" class="portfolio-item">Завдання №4</a></h3></li>
-                <li><h3><a href="lr4/task5.html" class="portfolio-item">Завдання №5</a></h3></li>
-            </ul></li>   
-            <li><h3>Лабораторна робота №5: </h3>
-                <ul>
-                    <li><h3><a href="lr5/task0.html" class="portfolio-item">Завдання №1</a></h3></li>
-                    <li><h3><a href="lr5/task1.html" class="portfolio-item">Завдання №2</a></h3></li>
-                    <li><h3><a href="lr5/task2.html" class="portfolio-item">Завдання №3</a></h3></li>
-                    <li><h3><a href="lr5/task3.html" class="portfolio-item">Завдання №4</a></h3></li>
-                </ul></li>
-            <li><h3>Лабораторна робота №6: </h3>
-                    <ul>
-                        <li><h3><a href="lr6/task1.html" class="portfolio-item">Завдання №1</a></h3></li>
-                        <li><h3><a href="lr6/task2.html" class="portfolio-item">Завдання №2</a></h3></li>
-                        <li><h3><a href="lr6/task3.html" class="portfolio-item">Завдання №3</a></h3></li>
-                        <li><h3><a href="lr6/task4.html" class="portfolio-item">Завдання №4</a></h3></li>
-                    </ul></li>   
-            <li><h3><a href="lr7.html" class="portfolio-item">Лабораторна робота №7</a></h3></li>    
-            <li><h3><a href="Exam/index.html" class="portfolio-item">Екзамен</a></h3></li>    
-            <li><h3><a href="lrJS1/index.html" class="portfolio-item">Лабораторна робота №1 JS</a></h3></li>       
-        </ul>
-        </ul>
-    <hr>    
-    <h1 id="contact-info">Контактна інформація:</h1>
-    <h3>
-    Email: petro.bohoslavets-pi2001@kep.nung.edu.ua
-    <br>Phone: +38 (098) 200 6949
-    </h3>
+    <script>
+        const title1 = document.getElementById("title1");
+        const content1 = document.getElementById("cont1");
+        title1.addEventListener('click', () => {
+            content1.classList.toggle("hide");
+        })
+
+        const title2 = document.getElementById("title2");
+        const content2 = document.getElementById("cont2");
+        title2.addEventListener('click', () => {
+            content2.classList.toggle("hide");
+        })
+    </script>
 </body>
 </html>

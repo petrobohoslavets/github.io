@@ -1,0 +1,41 @@
+.hor-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-item {
+    text-align: center; 
+    text-decoration: none;
+    color: black;
+}
+
+.hor-menu li {
+    padding: 8px 30px 0 30px;
+}
+
+.hor-menu {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(119, 119, 238);
+    padding-left: 80px;
+}
+
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin-left: 10px;
+}
+
+h4 {
+    margin: 5px;
+}
+
+.portfolio-item {
+    text-decoration: none;
+    color: black;
+}
