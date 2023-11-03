@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #field {
+            background-color: rgb(49, 235, 49);
+            background-image: radial-gradient(rgba(255, 0, 0) 1px, transparent 0);
+            background-size: 10px 10px;
+            position: relative;
+            border: 5px outset #000;
+        }
+
+        .border {
+            border: 5px inset #000;
+            margin: 20px 150px;
+            display: inline-block;
+        }
+
+        #ball {
+            position: absolute; 
+            transition: all 1s ease-in-out;
+            left: 275px;
+            top: 175px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="border">
+            <div id="field" style="width: 600px; height: 400px;">
+                <img src="ball.png" alt="ball" id="ball" width="50px" height="50px">
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function checkLimits(coord, fieldSize, ballSize) {
+            if(coord < 0) return 0;
+            else if(coord > fieldSize - ballSize) return fieldSize - ballSize;
+            else return coord - ballSize/2;
+        }
+        function setBall(e) {
+            let ball = document.getElementById('ball')
+
+            let fieldCoords = field.getBoundingClientRect();
+            let ballWidth = parseFloat(ball.getAttribute('width'));
+            let ballHeight = parseFloat(ball.getAttribute('height'));
+            let left = e.clientX - fieldCoords.left - ballWidth/2;
+            let top = e.clientY - fieldCoords.top - ballHeight/2;
+
+            ball.style.top = checkLimits(top, parseFloat(field.style.height), ballHeight) + "px";
+            ball.style.left = checkLimits(left, parseFloat(field.style.width), ballWidth) + "px";
+        }
+
+        var field = document.getElementById('field')
+
+        field.addEventListener('click', setBall)
+    </script>
+</body>
+</html>

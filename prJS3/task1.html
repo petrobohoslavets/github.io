@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+        }
+
+        .message {
+            padding: 12px;
+            border-top: 2px solid gray;
+
+            .title {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 48px;
+            }
+
+            .btn-close {
+                color: red;
+                cursor: pointer;
+                font-size: 24px;
+                margin: 8px 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">
+            <div class="title">Android</div>
+            <div class="text">Android - (вимов. Андроїд) операційна система і платформа для мобільних телефонів та планшетних комп'ютерів, створена компанією Google на базі ядра Linux. Підтримується альянсом Open Handset Alliance (ОНА).</div>
+            <div class="btn-close">[x]</div>
+        </div>
+        <div class="message">
+            <div class="title">Mac OS</div>
+            <div class="text">Мас OS, від Macintosh Operating System (Мак ОС. Операційна Система Макінтош), є першою комерційною графічною операційною системою, створеною компанією Apple Computer. Перша версія Мас OS вийшла у 1984 році разом з першим комп'ютером Macintosh.</div>
+            <div class="btn-close">[x]</div>
+        </div>
+        <div class="message">
+            <div class="title">Windows Phone</div>
+            <div class="text">Windows Phone (кодова назва «Photon») — велике оновлення Windows Mobile, що вийшло 11 жовтня 2010 року. Дана система є повністю новою, з повністю новим інтерфейсом і - вперше - з інтеграцією сервісів Microsoft Xbox Live i Zune. Презентація системи відбулася в рамках заходу Mobile World Congress, що проходить у Барселоні.</div>
+            <div class="btn-close">[x]</div>
+        </div>
+    </div>
+    <script>
+        let buttons = document.querySelectorAll('.message > .btn-close');
+        buttons.forEach(element => {
+            element.addEventListener('click', () => {
+                element.parentNode.remove()
+            })
+        });
+    </script>
+</body>
+</html>
