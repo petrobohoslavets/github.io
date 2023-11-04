@@ -45,7 +45,7 @@
         function checkLimits(coord, fieldSize, ballSize) {
             if(coord < 0) return 0;
             else if(coord > fieldSize - ballSize) return fieldSize - ballSize;
-            else return coord - ballSize/2;
+            else return coord;
         }
         function setBall(e) {
             let ball = document.getElementById('ball')
