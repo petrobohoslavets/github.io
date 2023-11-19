@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://assets-global.website-files.com/61819aaca0e7ac73f85a2d54/6384e2445b64261c8487e565_Finsweet-logo-icon-normal-black.svg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pricing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="fixed-container"></div>
+    <header class="header">
+        <div class="fixed-background"></div>
+        <div class="content-wrap">
+            <nav class="header-menu">
+                <div class="logo">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <img src="img/logo.svg" alt="logo" class="logo-img">
+                    </a>
+                </div>
+                <div class="main-menu">
+                    <ul id="mainMenu" class="menu-list hide-menu">
+                        <li><a href="index.html" class="main-text">Home</a></li>
+                        <li><a href="about-us.html" class="main-text">About us</a></li>
+                        <li><a href="features.html" class="main-text">Features</a></li>
+                        <li><a href="pricing.html" class="active main-text">Pricing</a></li>
+                        <li><a href="blog.html" class="main-text">Blog</a></li>
+                    </ul>
+                    <div id="menuIcons" class="main-menu-icons">
+                        <i id="iconOpen" class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
+                        <i id="iconClose" class="fa-solid fa-xmark fa-2xl hide" style="color: #ffffff;"></i>
+                    </div>
+                    <button class="header-button main-text openModal">Contact us</button>
+                </div>
+            </nav>    
+        </div>
+    </header>
+    <!-- /HEADER -->
+
+    <article id="contact-us" class="hide">
+        <form>
+            <div class="inputs">
+                <div>
+                    <label for="contactName">Ім'я</label>
+                    <input type="text" placeholder="Введіть своє ім'я" id="contactName">
+                </div>
+                <div>
+                    <label for="contactEmail">Email</label>
+                    <input type="email" placeholder="Введіть свій Email" id="contactEmail">
+                </div>
+                <div>
+                    <label for="contactSubj1">Subject</label>
+                    <input type="text" placeholder="Provide context" id="contactSubj1">
+                </div>
+                <div>
+                    <label for="contactSubj2">Subject</label>
+                    <input type="text" placeholder="Select Subject" id="contactSubj2">
+                </div>
+            </div>
+            <div class="message">
+                <label for="message">Повідомлення</label>
+                <textarea name="message" id="message" rows="4" placeholder="Напишіть сюди своє питання"></textarea>
+            </div>
+            <span>
+                <button type="submit">Відправити</button>
+                <div id="close" class="closeModal">Відмінити</div>
+            </span>
+        </form>
+    </article>
+
+    <article id="plans">
+        <div class="content-wrap">
+            <div class="title">
+                <h1 class="title-text big">Наші тарифні плани</h1>
+                <div class="small-text">Коли ви будете готові вийти за рамки створення прототипів у Figma, Webflow готовий допомогти вам втілити ваші проекти в життя — без кодування.                </div>
+            </div>
+            <div class="scroll-container">
+                <div class="pricing-card">
+                    <div class="card-head">
+                        <div class="price">$299</div>
+                        <div class="price-text">Per Design</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="content-title">Сторінка-вітрина</h3>
+                        <div class="small-text">When you’re ready to go beyond prototyping in Figma, </div>
+                    </div>
+                    <ul class="card-list">
+                        <li>All limited links</li>
+                        <li>Own analytics plaftorm</li>
+                        <li>Chat support</li>
+                        <li class="off">Optimize hashtags</li>
+                        <li class="off">Unlimited users</li>
+                    </ul>
+                    <div class="pricing-button openModal">Get started</div>
+                </div>
+                <div class="pricing-card active">
+                    <div class="circle"></div>
+                    <div class="card-head">
+                        <div class="price">$399</div>
+                        <div class="price-text">Multi Design</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="content-title">Вебсторінка</р>
+                        <div class="small-text">When you’re ready to go beyond prototyping in Figma, Webflow’s ready to help. </div>
+                    </div>
+                    <ul class="card-list">
+                        <li>All limited links</li>
+                        <li>Own analytics plaftorm</li>
+                        <li>Chat support</li>
+                        <li>Optimize hashtags</li>
+                        <li>Unlimited users</li>
+                    </ul>
+                    <div class="pricing-button openModal">Get started</div>
+                </div>
+                <div class="pricing-card">
+                    <div class="card-head">
+                        <div class="price">$499+</div>
+                        <div class="price-text">Per Design</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="content-title">Комплексний проєкт</h3>
+                        <div class="small-text">When you’re ready to go beyond prototyping in Figma, </div>
+                    </div>
+                    <ul class="card-list">
+                        <li>All limited links</li>
+                        <li>Own analytics plaftorm</li>
+                        <li>Chat support</li>
+                        <li>Optimize hashtags</li>
+                        <li>Unlimited users</li>
+                        <li>Asstist and Help</li>
+                    </ul>
+                    <div class="pricing-button openModal">Contact us</d>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="faq">
+        <div class="content-wrap">
+            <div class="faq-content">
+                <div class="open-container">
+                    <div class="open-title">Frequently asked questions</div>
+                    <div class="faq-open-text">Contact us for more info</div>
+                </div>
+                <div class="faq-body">
+                    <div class="body-content-item">
+                        <div class="faq-number">01</div>
+                        <div class="faq-text-container">
+                            <div class="faq-question">How much time does it take?</div>
+                            <div class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
+                        <img src="img/home/+.svg" alt="+" class="faq-button faq-close-button">
+                    </div>
+                    <div class="body-content-item">
+                        <div class="faq-number">02</div>
+                        <div class="faq-text-container">
+                            <div class="faq-question">What is your class naming convention?</div>
+                            <div class="faq-answer hide-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
+                        <img src="img/home/+.svg" alt="+" class="faq-button">
+                    </div>
+                    <div class="body-content-item">
+                        <div class="faq-number">03</div>
+                        <div class="faq-text-container">
+                            <div class="faq-question">How do you communicate?</div>
+                            <div class="faq-answer hide-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
+                        <img src="img/home/+.svg" alt="+" class="faq-button">
+                    </div>
+                    <div class="body-content-item">
+                        <div class="faq-number">04</div>
+                        <div class="faq-text-container">
+                            <div class="faq-question">I have a bigger project. Can you handle it?</div>
+                            <div class="faq-answer hide-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
+                        <img src="img/home/+.svg" alt="+" class="faq-button">
+                    </div>
+                    <div class="body-content-item">
+                        <div class="faq-number">05</div>
+                        <div class="faq-text-container">
+                            <div class="faq-question">What is your class naming convention?</div>
+                            <div class="faq-answer hide-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
+                        <img src="img/home/+.svg" alt="+" class="faq-button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="content-wrap">
+            <div class="footer-content">
+                <div class="logo-block">
+                    <img src="img/logo.svg" alt="logo" class="logo-img">
+                    <div class="block-text">Ми завжди відкриті для обговорення вашого проекту та покращення вашої присутності в Інтернеті.</div>
+                </div>
+                <div class="lets-talk-block">
+                    <div class="lets-talk-title">Давай поговоримо!                    </div>
+                    <div class="block-text">Ми завжди відкриті для обговорення вашого проекту, покращення вашої присутності в Інтернеті та допомоги у вирішенні проблем дизайну UX/UI.</div>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/thatsfinsweet" class="icon">
+                            <i class="fa-brands fa-facebook fa-3x" style="color: #ffffff;"></i>
+                        </a>
+                        <a href="https://twitter.com/thatsfinsweet" class="icon">
+                            <i class="fa-brands fa-twitter fa-3x" style="color: #ffffff;"></i>
+                        </a>
+                        <a href="https://www.instagram.com/thatsfinsweet/" class="icon">
+                            <i class="fa-brands fa-instagram fa-3x" style="color: #ffffff;"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/finsweet" class="icon">
+                            <i class="fa-brands fa-linkedin fa-3x" style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-email">
+                    <div class="contact-title">Email</div>
+                    <div class="contact-text">communications@finsweet.com</div>
+                </div>
+                <div class="contact-phone">
+                    <div class="contact-title">Call us</div>
+                    <div class="contact-text">0927 6277 28525</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="content-wrap">
+                <div class="footer-bottom-container">
+                    <div class="contact-text copyright">Copyright 2022, Finsweet.com</div>
+                    <ul class="menu-list">
+                        <li><a href="index.html" class="main-text">Home</a></li>
+                        <li><a href="about-us.html" class="main-text">About us</a></li>
+                        <li><a href="features.html" class="main-text">Features</a></li>
+                        <li><a href="pricing.html" class="main-text">Pricing</a></li>
+                        <li><a href="blog.html" class="main-text">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /FOOTER -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
