@@ -4,7 +4,8 @@ Options -Indexes
 
 ErrorDocument 404 /404.html
 
-# Use PHP 5.3 <IfModule mod_suphp.c>
+# Use PHP 5.3 
+<IfModule mod_suphp.c>
   suPHP_ConfigPath /opt/php53/lib
 </IfModule>
 
