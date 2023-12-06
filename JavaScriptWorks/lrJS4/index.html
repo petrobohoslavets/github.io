@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSS Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tabs">
+        <div class="tab whiteborder">border-radius</div>
+        <div class="tab">background-origin</div>
+        <div class="tab">background-position</div>
+        
+        
+        <div class="tabContent">
+            <div class="br">
+                <div class="inputs">
+                    <div><span>Верхній лівий радіус:</span>
+                        <input type="range" id="rtl" min="0" max="100" value="0">
+                        <input type="text" id="ttl" value="0">
+                    </div>
+                    <div><span>Верхній правий радіус:</span>
+                        <input type="range" id="rtr" min="0" max="100" value="0">
+                        <input type="text" id="ttr" value="0">
+                    </div>
+                    <div><span>Нижній правий радіус:</span>
+                        <input type="range" id="rbr" min="0" max="100" value="0">
+                        <input type="text" id="tbr" value="0">
+                    </div>
+                    <div><span>Нижній лівий радіус:</span>
+                        <input type="range" id="rbl" min="0" max="100" value="0">
+                        <input type="text" id="tbl" value="0">
+                    </div>
+                </div>
+                <div class="result">
+                    <div id="block"></div>
+                    Code:
+                    <textarea name="result-code" id="resultCode" rows="1" cols="40"></textarea>
+                </div>
+                <script src="border-radius.js"></script>
+            </div>
+        </div>
+        <div class="tabContent">
+            <div id="bg-o">
+                <div class="active" id="border-box">
+                    background-origin: border-box; 
+                </div>
+                <div id="padding-box">
+                    background-origin: padding-box; 
+                 </div>
+                 <div id="content-box">
+                    background-origin: content-box; 
+                 </div>
+            </div>
+            <div class="results">
+                <div class="container" id="resultContainer">
+                    
+                </div>
+            </div>
+            <script>
+                var buttons = document.getElementById('bg-o').childNodes;
+                var resultContainer = document.getElementById('resultContainer')
+                buttons.forEach(element => {
+                    element.addEventListener('click', () => {
+                        document.querySelector('#bg-o .active').classList.remove('active')
+                        element.classList.add('active');
+
+                        resultContainer.style.backgroundOrigin = element.getAttribute('id');
+                    })
+                });
+            </script>
+        </div>
+        <div class="tabContent">
+            <div class="bg-p">
+                <div class="inputs">
+                    <label for="positions">background-position: </label>
+                    <select name="positions" id="defaultPositions">
+                        <option value="top">top</option>
+                        <option value="bottom">bottom</option>
+                        <option value="left">left</option>
+                        <option value="right">right</option>
+                        <option value="center">center</option>
+                    </select>
+                    <div style="margin: 12px 0;">OR</div>
+                    
+                    <div><span>Боковий відступ:</span>
+                        <input type="range" id="rleft" min="0" max="500" value="0">
+                        <input type="text" id="tleft" value="0">
+                    </div>
+                    <div><span>Верхній відступ:</span>
+                        <input type="range" id="rtop" min="0" max="300" value="0">
+                        <input type="text" id="ttop" value="0">
+                    </div>
+                    
+                </div>
+                <div class="results">
+                    <div class="result-box" id="resultBox">
+                        
+                    </div>
+                    Code:
+                    <textarea name="result-pos" id="resultPosition" rows="1" cols="40"></textarea>
+                </div>
+                <script src="bg-position.js"></script>
+            </div>
+        </div>
+        
+    </div>
+    <script src="tabs.js">
+    </script>
+</body>
+</html>

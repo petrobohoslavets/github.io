@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+            <div class="product-item">
+              <div class="q c">&lt;</div>
+              <div class="circle c new">НОВИНКА</div>
+              <div class="category c"><a href="https://rozetka.com.ua/ua/smartwatch/c651392/40984=69029/" >Без дисплея <a></div>
+              <div class="l"></div>
+              <img src="w1.webp" alt="Product 1" class="image">
+              <div class="name"><a href="https://rozetka.com.ua/ua/373284885/p373284885/" class="name" >Розумний смарт годинник T2 Pro Сенсорний</a></div>
+              <div class="price c" >1 580грн</div>
+              <button class="soon ">НЕЗАБАРОМ У ПРОДАЖІ</button>
+            </div>
+            <div class="product-item">
+                <div class="circle c hit">ХІТ ПРОДАЖІВ</div>
+              <div class="category c" ><a href="https://rozetka.com.ua/ua/smartwatch/c651392/40984=67780/" >Кольоровий<a></div>
+              <div class="l"></div>
+              <img src="w2.webp" alt="Product 2" class="image">
+              <div class="name"><a href="https://rozetka.com.ua/ua/smart-chasy-apple-watch-se-2022-gps-aluminium-case-with-sport-band/g46453014/" class="name" >Смарт-годинник Apple Watch SE (2022) GPS 40mm Midnight</a></div>
+              <div class="price c" >12 599грн</div>
+              <button class="add-to-cart">У КОРЗИНУ</button>
+            </div>
+            <div class="product-item">
+              <div class="circle c hit">ХІТ ПРОДАЖІВ</div>
+              <div class="category c"><a href="https://rozetka.com.ua/ua/smartwatch/c651392/40984=67784/" >Монохромний<a></div>
+              <div class="l"></div>
+              <img src="w3.webp" alt="Product 3" class="image">
+              <div class="name"><a href="https://rozetka.com.ua/ua/garmin-010-02730-01/p367972158/" class="name" >Смарт-годинник Garmin Instinct Crossover Solar Graphite</a></div>
+              <div class="price c" >24 760грн</div>
+              <button class="add-to-cart">У КОРЗИНУ</button>
+            </div>
+            <div class="product-item">
+              <div class="w c">&gt; </div>
+              <div class="circle c"></div>
+              <div class="category c" ><a href="https://rozetka.com.ua/ua/smartwatch/c651392/40984=67788/" >Сенсорний<a></div>
+              <div class="l"></div>
+              <img src="w4.webp" alt="Product 4" class="image">
+              <div class="name"><a href="https://rozetka.com.ua/ua/smart-chasy-huawei-watch-gt-3-46mm/g42965056/" class="name" >Смарт-годинник Huawei Watch GT3 46 mm Black</a></div>
+              <div class="price c" ><span class="strike">6 499грн</span> 5 499грн</div>
+              <button class="add-to-cart">У КОРЗИНУ</button>
+            </div>
+      </div>
+      <div class="cart-icon-container" onclick="openCartModal()">
+        <img src="path/to/cart-icon.png" alt="Cart Icon" class="cart-icon">
+        <span id="cartItemCount">0</span>
+      </div>
+      
+      <!-- Модальне вікно "Корзина пуста" -->
+      <div id="emptyCartModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeCartModal()">&times;</span>
+              <p>Корзина пуста</p>
+          </div>
+      </div>
+      
+      <!-- Модальне вікно "Вкажіть кількість" -->
+      <div id="quantityModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeQuantityModal()">&times;</span>
+              <p>Вкажіть кількість:</p>
+              <input type="number" id="quantityInput" min="1" value="1">
+              <button onclick="addToCart()">Додати до корзини</button>
+          </div>
+      </div>
+      
+      <!-- Модальне вікно "Товар додано" -->
+      <div id="addedToCartModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeAddedToCartModal()">&times;</span>
+              <p>Товар додано</p>
+              <button onclick="goToCart()">Перейти у корзину</button>
+              <button onclick="closeAddedToCartModal()">Повернутись до покупок</button>
+          </div>
+      </div>
+      
+      <!-- Додайте посилання "Оплатити" та "Повернутись до покупок" на сторінці корзини -->
+      <div class="cart-page">
+          <!-- Додайте інформацію про додані товари згідно з пунктом 6 -->
+          <!-- Посилання на оплату та повернення до покупок -->
+          <a href="#" onclick="pay()">Оплатити</a>
+          <a href="#" onclick="returnToShopping()">Повернутись до покупок</a>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>

@@ -1286,7 +1286,7 @@ footer .block-text {
     }
 
     .faq-content {
-        padding-top: 40px;
+        padding: 40px 0;
         margin: 0 auto;
     }
 
@@ -1361,6 +1361,7 @@ footer .block-text {
 @media (min-width: 1024px) {
     .vop-content .content {
         display: flex;
+        gap: 32px;
         max-height: 600px;
     }
 
@@ -1378,11 +1379,14 @@ footer .block-text {
         display: flex;
         flex-wrap: wrap;
         margin-top: 28px;
+        justify-content: center;
+        gap: 32px;
     }
 
     .features-card-item {
         max-width: 404px;
         padding: 58px 32px 48px 48px;
+        margin: 0;
     }
 
     .review {
