@@ -20,6 +20,11 @@ button {
     cursor: pointer;
 }
 
+section, article {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 :root {
     --main: #1C1E53; 
     --lg: #BBBBCB;
@@ -117,6 +122,10 @@ p {
     }
     p {
         line-height: 28px;
+    }
+
+    section, article {
+        padding: 40px 0;
     }
 }
 
@@ -967,6 +976,7 @@ footer .block-text {
     align-items: start;
     margin: 4px;
     cursor: pointer;
+    padding: 4px 0;
 }
 
 .body-content-item:not(:last-child) {
@@ -1009,6 +1019,7 @@ footer .block-text {
     height: 0;
     opacity: 0;
     margin: 0!important;
+    overflow: hidden;
 }
 
 .faq-button {
@@ -1098,7 +1109,7 @@ footer .block-text {
 
 .card-blog-item {
     padding: 0 10px;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
 }
 
 .blog-content {
@@ -1107,7 +1118,7 @@ footer .block-text {
 }
 
 .blog-img {
-    max-height: 200px;
+    height: 200px;
     width: 100%;
     object-fit: cover;
 }
@@ -1139,14 +1150,17 @@ footer .block-text {
     display: flex;
     justify-content: space-between;
     max-width: 140px;
+    margin: 0 auto;
 }
 
 .read-more-text {
     color: var(--dark-blue);
 }
 
-
 @media (min-width: 768px) {
+    .read-more {
+        margin: 0;
+    }
     .hero-text {
         max-width: 682px;
         padding: 56px 60px;
@@ -1197,10 +1211,6 @@ footer .block-text {
         text-align: start;
     }
 
-    .hww {
-        padding: 36px 0;
-    }
-
     .hww-link {
         margin: 0;
     }
@@ -1215,10 +1225,6 @@ footer .block-text {
     .card {
         text-align: start;
         margin-bottom: 0;
-    }
-
-    .vop {
-        padding: 40px 0;
     }
 
     .vop-title {
@@ -1359,6 +1365,10 @@ footer .block-text {
 }
 
 @media (min-width: 1024px) {
+    .card-blog-item {
+        margin-bottom: 48px;
+    }
+
     .vop-content .content {
         display: flex;
         gap: 32px;
@@ -1397,6 +1407,7 @@ footer .block-text {
         display: flex;
         justify-content: center;
         gap: 110px;
+        flex-wrap: wrap;
     }
 
     .open-container {
@@ -1890,18 +1901,18 @@ footer .block-text {
 }
 
 .photo.one {
-    background-image: url("../img/about-us/card-photo1.png");
+    background-image: url("https://media.licdn.com/dms/image/D4E03AQEGmXyjm8NN9g/profile-displayphoto-shrink_200_200/0/1669840415693?e=1707350400&v=beta&t=j4WxBUNMtbRMSWqXkd0kk1Vw6iSUAcXTz5rEO-dg61A");
 }
 
 .photo.two {
-    background-image: url("../img/about-us/card-photo2.png");
+    background-image: url("https://uploads-ssl.webflow.com/5db95a67e381b2189edf0aba/5e690061e3a01a9ddf7a60ad_foto%20perfil%20ultrapetita.png");
 }
 
 .photo.three {
-    background-image: url("../img/about-us/card-photo3.png");
+    background-image: url("https://mir-s3-cdn-cf.behance.net/user/115/e7f030127248321.653fd2e71352b.png");
 }
 .photo.four {
-    background-image: url("../img/about-us/card-photo4.png");
+    background-image: url("https://media.licdn.com/dms/image/D4D03AQGURAkPkLmsNg/profile-displayphoto-shrink_200_200/0/1700559971564?e=1707350400&v=beta&t=44f0SChYxqUKzF7jXgy_zEsSYS8QOUlQ4gWBJ61Mx8I");
 }
 
 @media (min-width: 768px) {
@@ -1927,11 +1938,6 @@ footer .block-text {
 
 
 /* PRICING STYLES */
-#plans {
-    padding: 20px;
-    padding-top: 0;
-}
-
 .title {
     text-align: center;
     max-width: 562px;
@@ -1950,10 +1956,6 @@ footer .block-text {
     padding: 20px 20px;
     background-color: var(--grey-bg);
     border-radius: 12px;
-}
-
-.pricing-card:not(:last-child) {
-    margin-right: 32px;
 }
 
 .card-head {
@@ -2267,7 +2269,7 @@ li.off {
     width: 100%;
     max-width: 438px;
     display: flex;
-    column-gap: 32px;
+    column-gap: 8px;
 }
 
 #contact-us .message {
@@ -2310,6 +2312,12 @@ li.off {
 
 .openModal {
     cursor: pointer;
+}
+
+@media (min-width: 440px) {
+    #contact-us form .inputs div {
+        gap: 32px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -2357,5 +2365,25 @@ li.off {
 
     #contact-us button {
         margin: 32px 57px;
+    }
+}
+
+
+.logo-item {
+    width: 162px;
+}
+@media (min-width: 1024px) {
+    #plans .swiper-wrapper {
+        padding: 48px 0;
+    }
+
+    .pricing-card:last-child {
+        margin-right: 0!important;
+    }
+}
+
+@media (min-width: 1440px) {
+    #plans .swiper-wrapper {
+        justify-content: center;
     }
 }

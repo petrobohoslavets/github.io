@@ -1,59 +1,35 @@
-// review
 
-let reviews = [
-    {
-        text: "We’re constantly spitballing ideas and having Finsweet bring these visions to life within days.",
-        avatar: "https://assets-global.website-files.com/61819aaca0e7ac73f85a2d54/6294f61718c2388e30aa3113_Nash-p-500.jpg",
-        name: "Nashilu Mouen-Makoua",
-        des: "Head of growth"
-    }, 
-    {
-        text: "Partnering with Finsweet has enabled Clay to creatively develop and launch so many creative projects.",
-        avatar: "https://assets-global.website-files.com/61819aaca0e7ac73f85a2d54/635578546e708adbf966af98_Matt%20Maiale.jpeg",
-        name: "Matt Maiale",
-        des: "Marketing and Growth"
-    },
-    {
-        text: "Right from the start it felt like Finsweet was an extension of our own team, dropping directly into our existing workflow on Slack.",
-        avatar: "https://assets-global.website-files.com/61819aaca0e7ac73f85a2d54/62c830a2b3304602e9d790fd_1516510569985.jpeg",
-        name: "Rehno Lindeque",
-        des: "Circuits, Software, Computer Science"
-    },
-    {
-        text: "Finsweet are, and for ever will be, considered a part of our team!",
-        avatar: "https://assets-global.website-files.com/61819aaca0e7ac73f85a2d54/635301f5d7135d769ce6abf2_Ethan.jpg",
-        name: "Ethan Kramer",
-        des: "Agency owner"
-    },
-    {
-        text: "I was more than satisfied with the final product and how quick and painless it was to push it into production.",
-        avatar: "https://assets-global.website-files.com/61819aaca0e7ac73f85a2d54/637f31781f1599880f9eb3d6_jakeberg.jpeg",
-        name: "Jake Berg",
-        des: "President"
+const requestURL = 'https://github.com/petrobohoslavets/git-gui/blob/6fa1c2f68a6ff47078c989c5a8cb26233c3f426e/rewiew-data.json';
+const request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+
+request.onload = function() {
+    const reviews = request.response;
+    setReview()
+
+    var currReviewIndex = 1;
+
+    function setReview() {
+        if(currReviewIndex > reviews.length - 1) currReviewIndex = 0
+        else if(currReviewIndex < 0) currReviewIndex = reviews.length - 1 
+        let obj = reviews[currReviewIndex];
+
+        document.getElementById('reviewText').innerHTML = '"' + obj.text + '"';
+        document.getElementById('reviewName').innerHTML = obj.name;
+        document.getElementById('reviewDes').innerHTML = obj.des;
+        document.getElementById('reviewAvatar').setAttribute('src', obj.avatar)
     }
-]
 
-var currReviewIndex = 1;
+    document.querySelector('.review-arrow-left').addEventListener('click', () => {
+        currReviewIndex--;
+        setReview()
+    })
 
-function setReview() {
-    if(currReviewIndex > reviews.length - 1) currReviewIndex = 0
-    else if(currReviewIndex < 0) currReviewIndex = reviews.length - 1 
-    let obj = reviews[currReviewIndex];
-
-    document.getElementById('reviewText').innerHTML = '"' + obj.text + '"';
-    document.getElementById('reviewName').innerHTML = obj.name;
-    document.getElementById('reviewDes').innerHTML = obj.des;
-    document.getElementById('reviewAvatar').setAttribute('src', obj.avatar)
+    document.querySelector('.review-arrow-right').addEventListener('click', () => {
+        currReviewIndex++;
+        setReview()
+    })
 }
 
-document.querySelector('.review-arrow-left').addEventListener('click', () => {
-    currReviewIndex--;
-    setReview()
-})
-
-document.querySelector('.review-arrow-right').addEventListener('click', () => {
-    currReviewIndex++;
-    setReview()
-})
-
-setReview()

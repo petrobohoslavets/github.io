@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <!-- HEADER -->
@@ -19,7 +25,7 @@
         <div class="content-wrap">
             <nav class="header-menu">
                 <div class="logo">
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <a href="https://cdn.mtdv.me/video/rick.mp4">
                         <img src="img/logo.svg" alt="logo" class="logo-img">
                     </a>
                 </div>
@@ -46,29 +52,29 @@
         <form>
             <div class="inputs">
                 <div>
-                    <label for="contactName">Ім'я</label>
-                    <input type="text" placeholder="Введіть своє ім'я" id="contactName">
+                    <label for="contactName">Name</label>
+                    <input type="text" placeholder="Enter your name" id="contactName">
                 </div>
                 <div>
                     <label for="contactEmail">Email</label>
-                    <input type="email" placeholder="Введіть свій Email" id="contactEmail">
+                    <input type="email" placeholder="Enter your Emial" id="contactEmail">
                 </div>
                 <div>
-                    <label for="contactSubj1">Subject</label>
-                    <input type="text" placeholder="Provide context" id="contactSubj1">
+                    <label for="contactTopic">Topic</label>
+                    <input type="text" placeholder="Specify the topic" id="contactTopic">
                 </div>
                 <div>
-                    <label for="contactSubj2">Subject</label>
-                    <input type="text" placeholder="Select Subject" id="contactSubj2">
+                    <label for="contactType">Service Type</label>
+                    <input type="text" placeholder="Specify the service type" id="contactType">
                 </div>
             </div>
             <div class="message">
-                <label for="message">Повідомлення</label>
-                <textarea name="message" id="message" rows="4" placeholder="Напишіть сюди своє питання"></textarea>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="4" placeholder="Write your  question here"></textarea>
             </div>
             <span>
-                <button type="submit">Відправити</button>
-                <div id="close" class="closeModal">Відмінити</div>
+                <button type="submit">Send Messege</button>
+                <div id="close" class="closeModal">Cancel</div>
             </span>
         </form>
     </article>
@@ -76,65 +82,67 @@
     <article id="plans">
         <div class="content-wrap">
             <div class="title">
-                <h1 class="title-text big">Наші тарифні плани</h1>
-                <div class="small-text">Коли ви будете готові вийти за рамки створення прототипів у Figma, Webflow готовий допомогти вам втілити ваші проекти в життя — без кодування.                </div>
+                <h1 class="title-text big">Our Pricing Plans</h1>
+                <div class="small-text">Choose a plan that best fits your needs. We offer flexible and affordable plans for every type of project. Whether you're a startup, entrepreneur, or a large enterprise, we have advantageous terms to turn your idea into a successful venture.</div>
             </div>
-            <div class="scroll-container">
-                <div class="pricing-card">
-                    <div class="card-head">
-                        <div class="price">$299</div>
-                        <div class="price-text">Per Design</div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="pricing-card swiper-slide">
+                        <div class="card-head">
+                            <div class="price">$299</div>
+                            <div class="price-text">Per Design</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="content-title">Landing Page </h3>
+                            <div class="small-text">Ideal for moving beyond prototypes, it includes a professionally designed landing page with unlimited user capacity.</div>
+                        </div>
+                        <ul class="card-list">
+                            <li>All limited links</li>
+                            <li>Own analytics plaftorm</li>
+                            <li>Chat support</li>
+                            <li class="off">Optimize hashtags</li>
+                            <li class="off">Unlimited users</li>
+                        </ul>
+                        <div class="pricing-button openModal">Get started</div>
                     </div>
-                    <div class="card-content">
-                        <h3 class="content-title">Сторінка-вітрина</h3>
-                        <div class="small-text">When you’re ready to go beyond prototyping in Figma, </div>
+                    <div class="pricing-card swiper-slide active">
+                        <div class="circle"></div>
+                        <div class="card-head">
+                            <div class="price">$399</div>
+                            <div class="price-text">Multi Design</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="content-title">Website Page</р>
+                            <div class="small-text">Tailored for showcasing more content on multiple pages, offering a comprehensive solution for website development.</div>
+                        </div>
+                        <ul class="card-list">
+                            <li>All limited links</li>
+                            <li>Own analytics plaftorm</li>
+                            <li>Chat support</li>
+                            <li>Optimize hashtags</li>
+                            <li>Unlimited users</li>
+                        </ul>
+                        <div class="pricing-button openModal">Get started</div>
                     </div>
-                    <ul class="card-list">
-                        <li>All limited links</li>
-                        <li>Own analytics plaftorm</li>
-                        <li>Chat support</li>
-                        <li class="off">Optimize hashtags</li>
-                        <li class="off">Unlimited users</li>
-                    </ul>
-                    <div class="pricing-button openModal">Get started</div>
-                </div>
-                <div class="pricing-card active">
-                    <div class="circle"></div>
-                    <div class="card-head">
-                        <div class="price">$399</div>
-                        <div class="price-text">Multi Design</div>
+                    <div class="pricing-card swiper-slide">
+                        <div class="card-head">
+                            <div class="price">$499+</div>
+                            <div class="price-text">Per Design</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="content-title">Complex Project</h3>
+                            <div class="small-text">Get a personalized solution, advanced functionalities, and dedicated attention to bring your intricate project to life.</div>
+                        </div>
+                        <ul class="card-list">
+                            <li>All limited links</li>
+                            <li>Own analytics plaftorm</li>
+                            <li>Chat support</li>
+                            <li>Optimize hashtags</li>
+                            <li>Unlimited users</li>
+                            <li>Asstist and Help</li>
+                        </ul>
+                        <div class="pricing-button openModal">Contact us</d>
                     </div>
-                    <div class="card-content">
-                        <h3 class="content-title">Вебсторінка</р>
-                        <div class="small-text">When you’re ready to go beyond prototyping in Figma, Webflow’s ready to help. </div>
-                    </div>
-                    <ul class="card-list">
-                        <li>All limited links</li>
-                        <li>Own analytics plaftorm</li>
-                        <li>Chat support</li>
-                        <li>Optimize hashtags</li>
-                        <li>Unlimited users</li>
-                    </ul>
-                    <div class="pricing-button openModal">Get started</div>
-                </div>
-                <div class="pricing-card">
-                    <div class="card-head">
-                        <div class="price">$499+</div>
-                        <div class="price-text">Per Design</div>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="content-title">Комплексний проєкт</h3>
-                        <div class="small-text">When you’re ready to go beyond prototyping in Figma, </div>
-                    </div>
-                    <ul class="card-list">
-                        <li>All limited links</li>
-                        <li>Own analytics plaftorm</li>
-                        <li>Chat support</li>
-                        <li>Optimize hashtags</li>
-                        <li>Unlimited users</li>
-                        <li>Asstist and Help</li>
-                    </ul>
-                    <div class="pricing-button openModal">Contact us</d>
                 </div>
             </div>
         </div>
@@ -145,46 +153,46 @@
             <div class="faq-content">
                 <div class="open-container">
                     <div class="open-title">Frequently asked questions</div>
-                    <div class="faq-open-text">Contact us for more info</div>
+                    <div class="faq-open-text openModal">Contact us for more info</div>
                 </div>
                 <div class="faq-body">
                     <div class="body-content-item">
                         <div class="faq-number">01</div>
                         <div class="faq-text-container">
-                            <div class="faq-question">How much time does it take?</div>
-                            <div class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            <div class="faq-question">How do I choose the right pricing plan for my project?</div>
+                            <div class="faq-answer">Evaluate your project's needs and size. Our Basic Plan suits smaller projects, while the Standard and Premium Plans cater to more extensive and complex requirements.</div>
                         </div>
                         <img src="img/home/+.svg" alt="+" class="faq-button faq-close-button">
                     </div>
                     <div class="body-content-item">
                         <div class="faq-number">02</div>
                         <div class="faq-text-container">
-                            <div class="faq-question">What is your class naming convention?</div>
-                            <div class="faq-answer hide-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            <div class="faq-question">Are there any hidden fees in your pricing plans?</div>
+                            <div class="faq-answer hide-answer">No, our pricing is transparent. The amount you see for each plan is all-inclusive, with no hidden fees. We believe in honesty and clarity in our pricing structure.</div>
                         </div>
                         <img src="img/home/+.svg" alt="+" class="faq-button">
                     </div>
                     <div class="body-content-item">
                         <div class="faq-number">03</div>
                         <div class="faq-text-container">
-                            <div class="faq-question">How do you communicate?</div>
-                            <div class="faq-answer hide-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            <div class="faq-question">Can I switch between pricing plans after subscribing?</div>
+                            <div class="faq-answer hide-answer">Yes, you can upgrade or downgrade your plan at any time. Simply contact our support team, and they will assist you in making the necessary adjustments.</div>
                         </div>
                         <img src="img/home/+.svg" alt="+" class="faq-button">
                     </div>
                     <div class="body-content-item">
                         <div class="faq-number">04</div>
                         <div class="faq-text-container">
-                            <div class="faq-question">I have a bigger project. Can you handle it?</div>
-                            <div class="faq-answer hide-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            <div class="faq-question">What payment methods do you accept?</div>
+                            <div class="faq-answer hide-answer">We accept major credit cards (Visa, MasterCard, American Express) and secure online payment methods. For enterprise-level plans, we also offer customized invoicing options.</div>
                         </div>
                         <img src="img/home/+.svg" alt="+" class="faq-button">
                     </div>
                     <div class="body-content-item">
                         <div class="faq-number">05</div>
                         <div class="faq-text-container">
-                            <div class="faq-question">What is your class naming convention?</div>
-                            <div class="faq-answer hide-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            <div class="faq-question">Is there a trial period for your pricing plans?</div>
+                            <div class="faq-answer hide-answer">While we don't offer a trial period, we provide detailed information about each plan's features. Feel free to reach out to our sales team for any clarifications before making your decision.</div>
                         </div>
                         <img src="img/home/+.svg" alt="+" class="faq-button">
                     </div>
@@ -199,11 +207,11 @@
             <div class="footer-content">
                 <div class="logo-block">
                     <img src="img/logo.svg" alt="logo" class="logo-img">
-                    <div class="block-text">Ми завжди відкриті для обговорення вашого проекту та покращення вашої присутності в Інтернеті.</div>
+                    <div class="block-text">We are always open to discuss your project and improve your online presence.</div>
                 </div>
                 <div class="lets-talk-block">
-                    <div class="lets-talk-title">Давай поговоримо!                    </div>
-                    <div class="block-text">Ми завжди відкриті для обговорення вашого проекту, покращення вашої присутності в Інтернеті та допомоги у вирішенні проблем дизайну UX/UI.</div>
+                    <div class="lets-talk-title">Lets Talk!</div>
+                    <div class="block-text">We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.</div>
                     <div class="icons">
                         <a href="https://www.facebook.com/thatsfinsweet" class="icon">
                             <i class="fa-brands fa-facebook fa-3x" style="color: #ffffff;"></i>
@@ -248,5 +256,26 @@
     </footer>
     <!-- /FOOTER -->
     <script src="scripts/script.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            scrollbar: {el: '.swiper-scrollbar',},
+            slidesPerView: 1,
+            width: 300,
+            spaceBetween: 32,
+            breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                    width: 450
+                },
+                1000: {
+                    slidesPerView: 2,
+                    width: 740,
+                },
+                1400: {
+                    slidesPerView: 3
+                }
+            }
+             });
+    </script>
 </body>
 </html>
