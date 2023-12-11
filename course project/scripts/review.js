@@ -1,16 +1,16 @@
 
-const requestURL = 'https://github.com/petrobohoslavets/git-gui/blob/6fa1c2f68a6ff47078c989c5a8cb26233c3f426e/rewiew-data.json';
+const requestURL = 'https://petrobohoslavets.github.io/course%20project/scripts/rewiews-data.json';
 const request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-    const reviews = request.response;
-    setReview()
-
     var currReviewIndex = 1;
 
+    const reviews = request.response;
+    setReview()
+    
     function setReview() {
         if(currReviewIndex > reviews.length - 1) currReviewIndex = 0
         else if(currReviewIndex < 0) currReviewIndex = reviews.length - 1 
