@@ -115,12 +115,12 @@ request.onload = function() {
     let blogContainer = document.querySelector('.blog-container')
 
     console.log("Before: ", blogs)
-    setFirst(blogs[0])
+    //setFirst(blogs[0])
     blogContainer.innerHTML = ""
 
-    for(let i = 1; i < blogs.length; i++) {
-        blogContainer.appendChild(createBlogCard(blogs[i]))
-    }
+    // for(let i = 1; i < blogs.length; i++) {
+    //     blogContainer.appendChild(createBlogCard(blogs[i]))
+    // }
 
     readMoreButton.addEventListener('click', toggleAll)
     showLessButton.addEventListener('click', () => {
