@@ -6,8 +6,8 @@ request.send()
 
 request.onload = function() {
     const blogs = request.response;
-    console.log("At init: ", blogs[0], blogs)
-    
+    console.log("At init: ", blogs)
+    console.log(JSON.parse(blogs)[0])
     var fullContainer = document.getElementById('full-blog');
 
     function setFirst(obj) {
@@ -115,7 +115,7 @@ request.onload = function() {
     let moreBlogs = document.getElementById('our-blog')
     let blogContainer = document.querySelector('.blog-container')
 
-    console.log("Before: ", blogs[0], blogs)
+    console.log("Before: ", blogs)
     setFirst(blogs[0])
     blogContainer.innerHTML = ""
 
