@@ -112,6 +112,7 @@ request.onload = function() {
     let moreBlogs = document.getElementById('our-blog')
     let blogContainer = document.querySelector('.blog-container')
 
+    console.log(blogs, blogs[0])
     setFirst(blogs[0])
     blogContainer.innerHTML = ""
 
