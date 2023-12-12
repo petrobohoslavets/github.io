@@ -1,0 +1,66 @@
+[
+    {
+        "title": "A UX Case Study on Creating a Studious Environment for Students",
+        "author": "Saki Kurano",
+        "date": "8th August 2021",
+        "firstText": "During our research, one university student said that she used to study in a library but due to the pandemic, she now needs to study at home. Now, she has to study in her room — making it difficult for her to keep focused.",
+        "image": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*MIcb956OlCzLpLAH6fpyMQ.png",
+        "text": [
+            {
+                "title": "Why Do Students Study?",
+                "text": "We first set out to understand the students’ motivations. Some key questions we kept in mind were: <br> Why do students study so hard? <br> What do students want to obtain through their studies? <br> What is studying for students? <br><br> Through our research (Zoom interviews, reading threads, and watching study-related youtube videos), we tried to figure out the answers to those questions."
+            },
+            {
+                "title": "What Interrupts Their Studies?",
+                "text": "While we now understood their core motivation for studying, we still needed to dig deeper and ask ourselves why some students were having a hard time staying focused. <br><br> While there are a lot of distractions in our world, we found that many of our participants said that their smartphones were their largest distraction. The endless amounts of apps (Ex. Instagram, mobile games) on their phones kept them from being productive.",
+                "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*smWTcJFKc3rv8dJY"
+            },
+            {
+                "title": "Competitive Analysis",
+                "text": "We researched other focus apps (e.g. Focus To Do, BeFocused), task management apps (e.g. Todoist), and “Study with Me” videos on YouTube. We noticed that the “Study with Me” videos on YouTube are very popular among students. Some videos had over 1 million views and thousands of comments. In fact, many people put their to-dos and goals in the videos’ comment sections. From there, we assumed that it was important for them to create a clear goal(s) when they start their studies."
+            }
+        ]
+    }, 
+    {
+        "title": "26 best color combinations for your next design",
+        "author": "Naja Wade",
+        "firstText": "Color is the most powerful tool as a designer — and the most vast. Here are 26 of the best color combinations to inspire your next design in 2023.",
+        "readMore": "https://webflow.com/blog/best-color-combinations",
+        "image": "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/651ed6b5bbb40052ce1a0aab_BlogHeader_26-best-color-combinations-2400x1260-p-1080.jpg"
+    }, 
+    {
+        "title": "17 best UI/UX design tools for the modern day designer in 2023",
+        "author": "Jeff Cardello",
+        "firstText": "Discover the best UI/UX design tools for designers — from prototyping to information architecture, we'll cover them all.",
+        "readMore": "https://webflow.com/blog/ui-ux-design-tools",
+        "image": "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/651ed6df5f1452816829d52f_BlogHeader_17-best-ui-ux-design-tools-2400x1260-p-1080.jpg"
+    }, 
+    {
+        "title": "Managing explosive growth: lessons in website scale from Jasper",
+        "author": "Leah Retta",
+        "firstText": "Learn how leading AI company Jasper is supercharging its website with Webflow to deliver best-in-class experiences for an ever-growing audience.",
+        "readMore": "https://webflow.com/blog/jasper-lessons-website-scale",
+        "image": "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/651ed6f6079423d264311f39_BlogHeader_Managing-explosive-growth-Jasper-2400x1260-p-1080.jpg"
+    }, 
+    {
+        "title": "Community Grant Spotlight: Ritesh Gupta, Useful School",
+        "author": "Jara Montez",
+        "firstText": "Meet Ritesh Gupta, one of the recipients of Webflow Community Grants.",
+        "readMore": "https://webflow.com/blog/community-grant-ritesh-gupta",
+        "image": "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/651ed7415f640e29be69b651_BlogHeader_Community-spotlight-ritesh-gupta-2400x1260-p-1080.jpg"
+    }, 
+    {
+        "title": "Evolving teamwork with new content editing and commenter roles",
+        "author": "Jace Wade",
+        "firstText": "Building on recent improvements to how teams work in Webflow, introducing new roles in the Designer to supercharge content editing and collaboration.",
+        "readMore": "https://webflow.com/blog/content-editing-commenter-roles",
+        "image": "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/651ed769819bbe057a3d8a5f_BlogHeader_New-content-editing-commenter-roles-refreshed-2400x1260-p-1080.jpg"
+    }, 
+    {
+        "title": "How one founder believes AI will change agencies for the better — if they use it wisely",
+        "author": "Leo Zakour",
+        "firstText": "Discover how Leo Zakour, co-founder and CEO at digital branding agency Refokus, is using AI to build a better agency — and his advice on how to partner with AI.",
+        "readMore": "https://webflow.com/blog/refokus-ai-leo-zakour",
+        "image": "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/651ed7a35f640e29be6a0cf1_BlogHeader_Leo-Zakour-refokus-ai-2400x1260-p-1080.jpg"
+    }
+]
