@@ -7,7 +7,6 @@ request.send()
 request.onload = function() {
     const blogs = request.response;
     console.log("At init: ", blogs)
-    console.log(JSON.parse(blogs)[0])
     var fullContainer = document.getElementById('full-blog');
 
     function setFirst(obj) {
