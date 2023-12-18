@@ -10,7 +10,6 @@ request.onload = function() {
     var fullContainer = document.getElementById('full-blog');
 
     function setFirst(obj) {
-        console.log("setFirst start: " + obj);
         document.querySelector(".main-blog h2").innerHTML = obj.title
         let author = document.getElementById("main-blog-name"); 
         author.innerHTML = obj.author
@@ -53,7 +52,6 @@ request.onload = function() {
     } 
 
     function createBlogCard(obj) {
-        console.log("createBlogCard start: " + obj);
         try {
             if(obj.title !== undefined && obj.firstText !== undefined) {
                 let card = document.createElement('div');
@@ -114,7 +112,6 @@ request.onload = function() {
     let moreBlogs = document.getElementById('our-blog')
     let blogContainer = document.querySelector('.blog-container')
 
-    console.log("Before: ", blogs)
     setFirst(blogs[0])
     blogContainer.innerHTML = ""
 
@@ -129,5 +126,3 @@ request.onload = function() {
     })
 
 }
-
-
