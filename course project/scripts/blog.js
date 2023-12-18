@@ -6,7 +6,6 @@ request.send()
 
 request.onload = function() {
     const blogs = request.response;
-    console.log("At init: ", blogs)
     var fullContainer = document.getElementById('full-blog');
 
     function setFirst(obj) {
@@ -115,9 +114,9 @@ request.onload = function() {
     setFirst(blogs[0])
     blogContainer.innerHTML = ""
 
-    for(let i = 1; i < blogs.length; i++) {
-        blogContainer.appendChild(createBlogCard(blogs[i]))
-    }
+     for(let i = 1; i < blogs.length; i++) {
+         blogContainer.appendChild(createBlogCard(blogs[i]))
+     }
 
     readMoreButton.addEventListener('click', toggleAll)
     showLessButton.addEventListener('click', () => {
