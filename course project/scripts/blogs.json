@@ -1,67 +1,66 @@
 [
     {
-        "title": "A UX Case Study on Creating a Studious Environment for Students",
-        "author": "Saki Kurano",
-        "date": "8th August 2021",
-        "firstText": "During our research, one university student said that she used to study in a library but due to the pandemic, she now needs to study at home. Now, she has to study in her room — making it difficult for her to keep focused.",
+        "title": "UX-аналіз: Створення навчального середовища для студентів",
+        "author": "Сакі Курано",
+        "date": "8 серпня 2021",
+        "firstText": "Під час нашого дослідження одна студентка з університету розповіла, що раніше вона вчилася в бібліотеці, але через пандемію їй доводиться вчитися вдома. Тепер їй доводиться вчитися в своїй кімнаті, що ускладнює збереження концентрації.",
         "image": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*MIcb956OlCzLpLAH6fpyMQ.png",
         "text": [
             {
-                "title": "Why Do Students Study?",
-                "text": "We first set out to understand the students’ motivations. Some key questions we kept in mind were: <br> Why do students study so hard? <br> What do students want to obtain through their studies? <br> What is studying for students? <br><br> Through our research (Zoom interviews, reading threads, and watching study-related youtube videos), we tried to figure out the answers to those questions."
+                "title": "Чому студенти вчаться?",
+                "text": "Спочатку ми намагалися зрозуміти мотивацію студентів. Деякі ключові питання, які ми враховували: <br> Чому студенти так багато вчаться? <br> Що студенти хочуть отримати через свої навчання? <br> Що для студентів означає навчання? <br><br> Під час нашого дослідження (інтерв'ю за Zoom, читання форумів та перегляд відео на YouTube, присвячених навчанню), ми намагалися з'ясувати відповіді на ці питання."
             },
             {
-                "title": "What Interrupts Their Studies?",
-                "text": "While we now understood their core motivation for studying, we still needed to dig deeper and ask ourselves why some students were having a hard time staying focused. <br><br> While there are a lot of distractions in our world, we found that many of our participants said that their smartphones were their largest distraction. The endless amounts of apps (Ex. Instagram, mobile games) on their phones kept them from being productive.",
+                "title": "Що перешкоджає їхньому навчанню?",
+                "text": "Хоча ми тепер розуміли їхню основну мотивацію для навчання, нам все ще потрібно було поглибитися і задати собі питання, чому деяким студентам важко залишатися зосередженими. <br><br> При тому, що в світі багато відволікаючих факторів, ми виявили, що багато учасників вказали, що їхні смартфони є їхньою найбільшою відволікаючою дією. Безліч додатків (наприклад, Instagram, мобільні ігри) на їхніх телефонах заважали їм бути продуктивними.",
                 "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*smWTcJFKc3rv8dJY"
             },
             {
-                "title": "Competitive Analysis",
-                "text": "We researched other focus apps (e.g. Focus To Do, BeFocused), task management apps (e.g. Todoist), and “Study with Me” videos on YouTube. We noticed that the “Study with Me” videos on YouTube are very popular among students. Some videos had over 1 million views and thousands of comments. In fact, many people put their to-dos and goals in the videos’ comment sections. From there, we assumed that it was important for them to create a clear goal(s) when they start their studies."
+                "title": "Конкурентний аналіз",
+                "text": "Ми досліджували інші додатки для зосередженості (наприклад, Focus To Do, BeFocused), додатки для управління завданнями (наприклад, Todoist) та відео на YouTube з назвою \"Study with Me\". Ми помітили, що відео \"Study with Me\" на YouTube є дуже популярними серед студентів. Деякі відео мають понад 1 мільйон переглядів і тисячі коментарів. Фактично багато людей вказують свої завдання та цілі в коментарях до цих відео. З цього ми вирішили, що для них важливо створювати чітку мету або мети, коли вони починають вчитися."
             }
         ]
-    }, 
+    },
     {
-        "title": "26 best color combinations for your next design",
-        "author": "Naja Wade",
-        "firstText": "Color is the most powerful tool as a designer — and the most vast. Here are 26 of the best color combinations to inspire your next design in 2023.",
+        "title": "26 найкращих комбінацій кольорів для вашого наступного дизайну",
+        "author": "Наджа Вейд",
+        "firstText": "Колір - найпотужніший інструмент для дизайнера - і найширший. Ось 26 найкращих комбінацій кольорів, щоб надихнути ваш наступний дизайн у 2023 році.",
         "readMore": "https://webflow.com/blog/best-color-combinations",
         "image": "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/651ed6b5bbb40052ce1a0aab_BlogHeader_26-best-color-combinations-2400x1260-p-1080.jpg"
-    }, 
+    },
     {
-        "title": "17 best UI/UX design tools for the modern day designer in 2023",
-        "author": "Jeff Cardello",
-        "firstText": "Discover the best UI/UX design tools for designers — from prototyping to information architecture, we'll cover them all.",
+        "title": "17 кращих інструментів дизайну UI/UX для сучасного дизайнера у 2023 році",
+        "author": "Джефф Карделло",
+        "firstText": "Відкрийте для себе найкращі інструменти дизайну UI/UX для дизайнерів - від прототипування до інформаційної архітектури, ми розглянемо їх усі.",
         "readMore": "https://webflow.com/blog/ui-ux-design-tools",
         "image": "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/651ed6df5f1452816829d52f_BlogHeader_17-best-ui-ux-design-tools-2400x1260-p-1080.jpg"
-    }, 
+    },
     {
-        "title": "Managing explosive growth: lessons in website scale from Jasper",
-        "author": "Leah Retta",
-        "firstText": "Learn how leading AI company Jasper is supercharging its website with Webflow to deliver best-in-class experiences for an ever-growing audience.",
+        "title": "Управління вибуховим зростанням: уроки в масштабуванні веб-сайту від Jasper",
+        "author": "Лія Ретта",
+        "firstText": "Дізнайтеся, як провідна компанія в галузі штучного інтелекту Jasper підвищує продуктивність свого веб-сайту за допомогою Webflow для надання найкращих у своєму класі вражень для постійно зростаючої аудиторії.",
         "readMore": "https://webflow.com/blog/jasper-lessons-website-scale",
         "image": "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/651ed6f6079423d264311f39_BlogHeader_Managing-explosive-growth-Jasper-2400x1260-p-1080.jpg"
-    }, 
+    },
     {
-        "title": "Community Grant Spotlight: Ritesh Gupta, Useful School",
-        "author": "Jara Montez",
-        "firstText": "Meet Ritesh Gupta, one of the recipients of Webflow Community Grants.",
+        "title": "Підсвітка отримувача гранту: Рітеш Гупта, Useful School",
+        "author": "Джара Монтес",
+        "firstText": "Познайомтеся з Рітешем Гуптою, одним із отримувачів грантів спільноти Webflow.",
         "readMore": "https://webflow.com/blog/community-grant-ritesh-gupta",
         "image": "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/651ed7415f640e29be69b651_BlogHeader_Community-spotlight-ritesh-gupta-2400x1260-p-1080.jpg"
-    }, 
+    },
     {
-        "title": "Evolving teamwork with new content editing and commenter roles",
-        "author": "Jace Wade",
-        "firstText": "Building on recent improvements to how teams work in Webflow, introducing new roles in the Designer to supercharge content editing and collaboration.",
+        "title": "Еволюція командної роботи з новими ролями редагування вмісту та коментатора",
+        "author": "Джейс Вейд",
+        "firstText": "На основі останніх поліпшень у способі роботи команд в Webflow, представляємо нові ролі в Дизайнері для підвищення ефективності редагування вмісту та співпраці.",
         "readMore": "https://webflow.com/blog/content-editing-commenter-roles",
         "image": "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/651ed769819bbe057a3d8a5f_BlogHeader_New-content-editing-commenter-roles-refreshed-2400x1260-p-1080.jpg"
-    }, 
+    },
     {
-        "title": "How one founder believes AI will change agencies for the better — if they use it wisely",
-        "author": "Leo Zakour",
-        "firstText": "Discover how Leo Zakour, co-founder and CEO at digital branding agency Refokus, is using AI to build a better agency — and his advice on how to partner with AI.",
+        "title": "Як один засновник вважає, що штучний інтелект змінить агентства до кращого - якщо вони розумно використовують його",
+        "author": "Лео Закур",
+        "firstText": "Дізнайтеся, як Лео Закур, співзасновник і генеральний директор агентства з цифрового бренду Refokus, використовує штучний інтелект для створення кращого агентства - і його поради щодо співпраці з ШІ.",
         "readMore": "https://webflow.com/blog/refokus-ai-leo-zakour",
         "image": "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/651ed7a35f640e29be6a0cf1_BlogHeader_Leo-Zakour-refokus-ai-2400x1260-p-1080.jpg"
     }
 ]
-

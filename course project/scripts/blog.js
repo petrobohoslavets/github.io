@@ -85,7 +85,7 @@ request.onload = function() {
                 let readMore = document.createElement("a")
                 readMore.classList.add("read-more")
                 readMore.href = (obj.readMore !== undefined ? obj.readMore : "#")
-                readMore.innerHTML = "<div class='main-text read-more-text'>Read More</div> <img src='img/home/arrow_6.svg' alt='arrow' class='aroow'> "
+                readMore.innerHTML = "<div class='main-text read-more-text'>Більше</div> <img src='img/home/arrow_6.svg' alt='arrow' class='aroow'> "
                 card.appendChild(readMore)
                 return card;
 
